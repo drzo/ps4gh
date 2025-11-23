@@ -129,7 +129,7 @@ if ($hasToken -eq 'Y' -or $hasToken -eq 'y') {
     }
 } else {
     Write-Host "`nNo problem! You can authenticate later using:" -ForegroundColor Yellow
-    Write-Host "  `$token = 'your_token_here'" -ForegroundColor White
+    Write-Host "  `$token = 'ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'" -ForegroundColor White
     Write-Host "  `$secureToken = ConvertTo-SecureString -String `$token -AsPlainText -Force" -ForegroundColor White
     Write-Host "  Set-GitHubAuthentication -SessionOnly -AccessToken `$secureToken" -ForegroundColor White
 }
@@ -144,7 +144,7 @@ Write-Host "  1. Try listing your repositories:" -ForegroundColor White
 Write-Host "     Get-GitHubRepository" -ForegroundColor Gray
 Write-Host "`n  2. Use our convenient wrapper functions:" -ForegroundColor White
 Write-Host "     . .\GitHubManager.ps1" -ForegroundColor Gray
-Write-Host "     Connect-GitHub -AccessToken 'your_token'" -ForegroundColor Gray
+Write-Host "     Connect-GitHub -AccessToken 'ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'" -ForegroundColor Gray
 Write-Host "     Get-MyGitHubRepositories" -ForegroundColor Gray
 Write-Host "`n  3. Read the documentation:" -ForegroundColor White
 Write-Host "     - README.md (in this repository)" -ForegroundColor Gray

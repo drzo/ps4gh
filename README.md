@@ -75,7 +75,7 @@ To use PowerShellForGitHub, you need to authenticate with GitHub. The recommende
 ### Authenticate in PowerShell
 
 ```powershell
-$token = "your_github_personal_access_token"
+$token = "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 Connect-GitHub -AccessToken $token
 ```
 
@@ -177,7 +177,7 @@ Here's a complete example that demonstrates the entire workflow:
 . .\GitHubManager.ps1
 
 # Set your GitHub token
-$token = "ghp_your_token_here"
+$token = "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # Run the complete example workflow
 Invoke-GitHubExample -AccessToken $token -NewRepoName "test-repo-$(Get-Date -Format 'yyyyMMdd-HHmmss')"

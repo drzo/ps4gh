@@ -14,7 +14,7 @@ Install-Module PowerShellForGitHub -Scope CurrentUser
 Import-Module PowerShellForGitHub
 
 # Set up authentication (replace with your token)
-$token = "ghp_your_personal_access_token_here"
+$token = "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 $secureToken = ConvertTo-SecureString -String $token -AsPlainText -Force
 Set-GitHubAuthentication -SessionOnly -AccessToken $secureToken
 ```
