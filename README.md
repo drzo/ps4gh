@@ -76,7 +76,7 @@ To use PowerShellForGitHub, you need to authenticate with GitHub. The recommende
 
 ```powershell
 $token = "your_github_personal_access_token"
-Set-GitHubAuthentication -AccessToken $token
+Connect-GitHub -AccessToken $token
 ```
 
 ## Usage Examples
@@ -199,7 +199,7 @@ The `GitHubManager.ps1` script provides the following functions:
 | Function | Description |
 |----------|-------------|
 | `Install-GitHubModule` | Install the PowerShellForGitHub module |
-| `Set-GitHubAuthentication` | Configure GitHub authentication |
+| `Connect-GitHub` | Configure GitHub authentication |
 | `Get-MyGitHubRepositories` | List repositories for the authenticated user |
 | `New-GitHubRepo` | Create a new GitHub repository |
 | `Add-GitHubFile` | Upload a file to a repository |

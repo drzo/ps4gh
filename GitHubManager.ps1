@@ -44,7 +44,7 @@ function Install-GitHubModule {
 .SYNOPSIS
     Configure GitHub authentication
 #>
-function Set-GitHubAuthentication {
+function Connect-GitHub {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)]
@@ -304,7 +304,7 @@ function Invoke-GitHubExample {
     Install-GitHubModule
     
     # Step 2: Authenticate
-    Set-GitHubAuthentication -AccessToken $AccessToken
+    Connect-GitHub -AccessToken $AccessToken
     
     # Step 3: List existing repositories
     Write-Host "`nStep 1: Listing existing repositories..." -ForegroundColor Yellow
@@ -366,7 +366,7 @@ Created on: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 # Export functions
 Export-ModuleMember -Function @(
     'Install-GitHubModule',
-    'Set-GitHubAuthentication',
+    'Connect-GitHub',
     'Get-MyGitHubRepositories',
     'New-GitHubRepo',
     'Add-GitHubFile',
