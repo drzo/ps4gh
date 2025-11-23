@@ -142,8 +142,9 @@ Write-Host "========================================`n" -ForegroundColor Cyan
 Write-Host "Next steps:" -ForegroundColor Yellow
 Write-Host "  1. Try listing your repositories:" -ForegroundColor White
 Write-Host "     Get-GitHubRepository" -ForegroundColor Gray
-Write-Host "`n  2. Check out the example script:" -ForegroundColor White
+Write-Host "`n  2. Use our convenient wrapper functions:" -ForegroundColor White
 Write-Host "     . .\GitHubManager.ps1" -ForegroundColor Gray
+Write-Host "     Connect-GitHub -AccessToken 'your_token'" -ForegroundColor Gray
 Write-Host "     Get-MyGitHubRepositories" -ForegroundColor Gray
 Write-Host "`n  3. Read the documentation:" -ForegroundColor White
 Write-Host "     - README.md (in this repository)" -ForegroundColor Gray

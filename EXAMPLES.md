@@ -1,6 +1,8 @@
 # Quick Start Examples
 
-This file contains quick copy-paste examples for common GitHub operations using PowerShellForGitHub.
+This file contains quick copy-paste examples for common GitHub operations using PowerShellForGitHub module directly.
+
+> **Note**: This repository also provides wrapper functions in `GitHubManager.ps1` for convenience (e.g., `Connect-GitHub` instead of `Set-GitHubAuthentication`). See the main README.md for details on using those wrapper functions. The examples below use the PowerShellForGitHub module cmdlets directly.
 
 ## Installation and Setup
 
